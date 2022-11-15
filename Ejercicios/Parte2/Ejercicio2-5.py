@@ -9,8 +9,13 @@ n = int(input("Cuantos numeros quieres multipiclicar mi rey: "))
 # bucleciño
 for i in range(0, n):
     numerico = int(input())
-  
+    suma =+ numerico
+    multi =* numerico
+    
     lista.append(numerico)
       
 print(numpy.prod(lista))
 print(sum(lista))
+
+print(suma)
+print(multi)
