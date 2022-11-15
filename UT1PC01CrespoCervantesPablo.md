@@ -309,6 +309,7 @@ Ejercicio 2.2
 
 Para empezar a comparar vamos a ver primero de nuevo el codigo del ejercicio en python
 
+`
 num1=int(input())
 num2=int(input())
 
@@ -321,29 +322,35 @@ def fun(num1,num2):
     else:
         print(f'El numero {num2} es mayor que el {num1}')
 fun(num1,num2)
+`
 
 En C a la hora de crear funciones debemos de asignar que tipo de resultado nos va a devolver esta y los parametros de entrada.
 
+`
 tipo_del_resultado NOMBRE(tipo_param1 param1, tipo_param2 param2, ... ) 
 {
     /* Cuerpo de la función */
 }
+`
 
 Todas las funciones de C tienen un return que devuelve un valor este debe de coincidir con el establecido al principio de esta.
 
 Un ejemplo de esto seria el siguiente
 
-
+`
 int addition(int a, int b) 
 {
     return (a + b);
 }
+`
+
 
 Ejercicio 2-13
 ===
 
 Para empezar a comparar vamos a ver primero de nuevo el codigo del ejercicio en python
 
+`
 def contarmayusculas(cadenaorigen):
     cadena = cadenaorigen.lower()
     contador = 0
@@ -355,6 +362,7 @@ def contarmayusculas(cadenaorigen):
             contador = num
     print(contador)
 contarmayusculas(cadenaorigen)
+`
 
 Una de las primeras diferencias que encontramos es que en C no tenemos una opción de range para realizar un bucle de forma sencilla es por ello que usando condicionales podemos establecer un bucle while como por ejemplo.
 
