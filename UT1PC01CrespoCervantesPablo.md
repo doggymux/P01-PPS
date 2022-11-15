@@ -1,4 +1,4 @@
-# UT1-PC01CrespoCervantesPablo jijijaja
+# UT1-PC01CrespoCervantesPablo
 
 ## Caracteristicas principales Lenguajes de programación
 
