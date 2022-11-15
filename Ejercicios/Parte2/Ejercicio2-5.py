@@ -3,10 +3,11 @@
 #devolver 10 y multip([1,2,3,4]) debería devolver 24.
 
 
-lista = []
 n = int(input("Cuantos numeros quieres multipiclicar mi rey: "))
+
 suma = 0
 multi = 1
+
 # bucleciño
 
 for i in range(0, n):
@@ -14,7 +15,5 @@ for i in range(0, n):
     suma += numerico
     multi *= numerico
     
-    lista.append(numerico)
-
 print(suma)
 print(multi)
