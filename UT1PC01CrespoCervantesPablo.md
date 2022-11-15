@@ -360,7 +360,6 @@ Una de las primeras diferencias que encontramos es que en C no tenemos una opci�
 
 while( n >= 0 && n <= 10 )
 
-
 Diferencias entre C y python
 ===
 
@@ -369,3 +368,61 @@ Como hemos estado viendo anteriormente python y C son lenguajes muy diferente.
 C es un lenguaje que se utiliza principalmente para crear y desarrollar sistemas operativos, entre los mas famosos escritos en C podemos encontrar Unix.
 
 Por otra parte Python es un tipo de lenguaje que se utiliza especialmente en el desarrollo de aplicaciones web, software y machine learning
+
+A la hora de realizar la lectura del codigo, C necesita pasar por un proceso de compilado para que este codigo sea ejecutable, al utilizar un compilador traducimos un programa en codigo fuente, una vez compilado se le agrega las librerias a traves de un programa llamado linker y se obtiene al fin el ejecutable.
+
+Python por su parte no necesita de un proceso de compilado y el codigo de este es interpretado directamente, estos interpretes son programas que traducen lenguajes de alto nivel y su ejecuci처n se realiza simultaneamente. No se genera un programa objeto con este tipo de lenguaje.
+
+## Analisis de codigo
+
+Vamos a analizar el codigo fuente de los ejercicios, es por eso que comentaremos los elementos que veremos durante los ejercicios.
+
+Palabras reservadas
+===
+
+En las palabras reservadas podemos encontrar todas las cadenas que usamos para llamar a funciones internas del lenguaje como serian:
+
+-def
+-if
+-for
+-import
+-while
+-return
+-int
+
+Comandos o instrucciones
+===
+
+import --> metodo para importar librerias de python.
+
+Print() --> Funci처n que se utiliza para mostrar por pantalla
+
+lista = [] --> forma de generar una lista en python.
+
+enumerate() --> crea un array bidimensional usando la cadena dada donde podemos establecer la posici처n de la letra y el valor.
+
+[i:o] --> forma de realizar substring dando valores numericos para establecer las posiciones.
+
+[::-1] --> invertir la cadena.
+
+Identificadores
+===
+
+def "funcion" --> forma de definir funciones.
+
+nota = --> forma de crear variables en python
+
+
+Comparaciones
+===
+
+if "variable" "condici처n" --> forma de generar un condicional, establecemos el nombre de la variable que vamos a utilizar y la condici처n donde podemos utilizar condicionantes numericos, dentro del condicional if podemos ver elif y else.
+
+Bucles
+===
+
+while --> Otro metodo de generar bucles
+
+for "variable" in range() --> Bucle para recorrer un rango numerico. 
+
+"lista".append("variable") --> metodo para anexar la variable que tratamos a un listado.
