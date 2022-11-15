@@ -17,9 +17,11 @@ Python
 
 En python se ha dado la siguente solución a este ejercicio
 
+~~~
 for i in range (0,10):
     if ( i % 3 ) == 0:
         print(f"{i}")  
+~~~
 
 como podemos ver en python podemos escribir codigo de forma facil indexando de esta forma podemos establecer que se encuentra dentro del for o del if en nuestro ejercicio.
 
@@ -50,14 +52,18 @@ Ademas para cerrar el contenido de estos debemos de poner ; antes del final.
 
 Los bucles for en PHP varian debido a que no tenemos ninguna palabra reservada que signifique range, es por eso que los bucles debemos de generarlos de la siguiente forma.
 
+~~~
 for ([ExpresionInicial]; [ExpresiónCondicional]; [ExpresiónIncremental]) {
     sentencias; }
+~~~
 
 es decir:
 
+~~~
 for ($i = 0; $i <= 10; $i++){
     sentencias;
 }
+~~~
 
 de esta forma marcamos que $i vale 0 como en el rango que establecimos en el ejercicio y que una vez que compruebe que el valor de i se encuentra entre 0 y 10 sume 1 a este.
 
@@ -69,6 +75,7 @@ En JavaScript podemos encontrar las siguientes diferencias en el codigo.
 
 En el bucle for volvemos a encontrarnos con uan sintaxis parecida a la de PHP.
 
+~~~
 for ([ExpresionInicial]; [ExpresiónCondicional]; [ExpresiónIncremental]) {
     sentencias }
 
@@ -77,15 +84,19 @@ Es decir:
 for ($i; $i < 5; $i++){
     sentencias
 }
+~~~
+
 Como podemos observar tendremos que establecer la la expresión con la que empieza nuestro bucle, la condición con la que este terminara y como vamos a incrementar nuestra expresión.
 
 Al igual que en PHP se utilizan llaves para agrupar las diferentes expresiones que utilizaremos dentro de nuestro bucle.
 
 En el caso de los if estos varian debido a que la expresión que estamos usando para la condición debe ir completamente dentro de los parentesis de esta. Ademas estableceremos llaves para marcar donde empieza y acaba las acciones que se realizaran si la condicion es verdadera.
 
+~~~
 if (condición) {
    sentencia1
 }
+~~~
 
 Ejercicio 2.2
 ===
@@ -96,6 +107,7 @@ Definir una función max_de_tres(), que tome tres números como argumentos y dev
 
 Para realizar este ejercicio en python se ha creado el siguiente codigo:
 
+~~~
 num1=int(input())
 num2=int(input())
 
@@ -108,6 +120,7 @@ def fun(num1,num2):
     else:
         print(f'El numero {num2} es mayor que el {num1}')
 fun(num1,num2)
+~~~
 
 En python podemos definir funciones usando la palabra reservada def, de esta forma podemos escribir codigo que luego llamaremos escribiendo el nombre de la función y los parametros que esta necesite.
 
@@ -139,16 +152,19 @@ PHP
 
 En PHP al tratarse de un lenguaje web podemos cargar variables con información que nos de el usuario a traves de formularios los cuales recogemos tras realizar un submit.
 
+~~~
 <form action="foo.php" method="post">
     num1:  <input type="number" name="mun1" /><br />
     num2: <input type="number" name="mun2" /><br />
     <input type="submit" name="submit" value="Submit me!" />
 </form>
+~~~
 
 como vemos en el ejemplo anterior se puede enviar la información de las variables que necesitamos a traves de los input, podemos controlar que sean numeros gracias al atributo type.
 
 A la hora de crear los if si que veremos grandes diferencias debido a que como vimos anteriormente los condicionales deberan de llevar las sentencias que se ejecutan en caso de cumplirse entre {} y las condiciones de estas entre (), ademas la forma de establecer un elif en php se llama con elseif. 
 
+~~~
 if ($a > $b) {
     echo "a es mayor que b";
 } elseif ($a == $b) {
@@ -156,6 +172,7 @@ if ($a > $b) {
 } else {
     echo "a es menor que b";
 }
+~~~
 
 JavaScript
 ---
@@ -166,10 +183,12 @@ En los input deberemos de añadir un atributo llamado ID por ejemplo ID="num1" c
 
 Crearemos una funcion en un archivo .Js en el cual establecemos que y donde se almacena la información.
 
+~~~
 function returnText(){
     let input = document.getElementById("mun1").value;
     alert(input)
 }
+~~~
 
 Por ultimo para llamar a esta función deberemos de establecer que el botón de submit del formulario llame a la función añadiendo un atributo como este onclick="returnText()"
 
@@ -180,7 +199,7 @@ Ejercicio 2-13
 
 Para este Ejercicio en Python hemos tenido que comprobar cuantas mayusculas tiene una cadena dada por un usuario.
 
-
+~~~
 cadenaorigen = input("introduce una cadena para contar las mayusculas: ")
 
 def contarmayusculas(cadenaorigen):
@@ -194,6 +213,7 @@ def contarmayusculas(cadenaorigen):
             contador = num
     print(contador)
 contarmayusculas(cadenaorigen)
+~~~
 
 Para realizar el ejercicio hemos usado la funcion lower para crear una cadena con la que comparar la información dada por el usuario, con esto estableceremos todas las letras de la cadena en minusculas.
 
@@ -268,18 +288,22 @@ Ejercicio 1.3
 
 En python se ha dado la siguente solución a este ejercicio
 
+~~~
 for i in range (0,10):
     if ( i % 3 ) == 0:
         print(f"{i}")  
+~~~
 
 Es por eso que veremos las diferencias de como se hubiera generado este codigo de haberse escrito en C
 
 El primer cambio lo veriamos antes del codigo esto es debido a que al escribir en C deberemos de establecer un main() seguido de corchetes para empezar el codigo
 
+~~~
 main()
     {
         "codigo"
     }
+~~~
 
 Para crear el bucle for primero deberemos de definir la variable que utilizaremos en este a diferencia de python que nos permite definirla en el mismo bucle, finalizamos con ;. 
 
@@ -287,6 +311,7 @@ int i;
 
 Tras esto generamos el bucle for, este es parecido a Python ya que deberemos de darle el valor de inicio a la variable, hasta que valor va a estar dentro del bucle y el incremento.
 
+~~~
 for (i = 1; i <= 10; i++)
 
 {
@@ -294,13 +319,17 @@ for (i = 1; i <= 10; i++)
 //Instrucciones a ejecutar "x" número de veces ;
 
 }
+~~~
 
 Cuando escribamos el if en C deberemos de poner la condicion entre parentesis seguido de {} que contendran las instrucciones que realizara el programa de ser true la condición.
 
+~~~
 if (Condición) 
 {
    "Codigo";
 }
+~~~
+
  las diferencias como vemos radican en tener que establecer la condición entre parentesis las {} y el uso de ; para finalizar el codigo dentro del if.
 
 
@@ -308,8 +337,8 @@ Ejercicio 2.2
 ===
 
 Para empezar a comparar vamos a ver primero de nuevo el codigo del ejercicio en python
+
 ~~~
-`
 num1=int(input())
 num2=int(input())
 
@@ -322,28 +351,29 @@ def fun(num1,num2):
     else:
         print(f'El numero {num2} es mayor que el {num1}')
 fun(num1,num2)
-`
 ~~~
+
 En C a la hora de crear funciones debemos de asignar que tipo de resultado nos va a devolver esta y los parametros de entrada.
 
 `
-tipo_del_resultado NOMBRE(tipo_param1 param1, tipo_param2 param2, ... ) 
+tipo_del_resultado NOMBRE(tipo_param1 param1, tipo_param2 param2, ... )
+
+~~~
 {
     /* Cuerpo de la función */
 }
-`
+~~~
+
 
 Todas las funciones de C tienen un return que devuelve un valor este debe de coincidir con el establecido al principio de esta.
 
 Un ejemplo de esto seria el siguiente
 
 ~~~
-`
 int addition(int a, int b) 
 {
     return (a + b);
 }
-`
 ~~~
 
 Ejercicio 2-13
@@ -352,7 +382,6 @@ Ejercicio 2-13
 Para empezar a comparar vamos a ver primero de nuevo el codigo del ejercicio en python
 
 ~~~
-`
 def contarmayusculas(cadenaorigen):
     cadena = cadenaorigen.lower()
     contador = 0
@@ -364,7 +393,6 @@ def contarmayusculas(cadenaorigen):
             contador = num
     print(contador)
 contarmayusculas(cadenaorigen)
-`
 ~~~
 
 Una de las primeras diferencias que encontramos es que en C no tenemos una opción de range para realizar un bucle de forma sencilla es por ello que usando condicionales podemos establecer un bucle while como por ejemplo.
@@ -389,7 +417,7 @@ Python por su parte no necesita de un proceso de compilado y el codigo de este e
 Vamos a analizar el codigo fuente de los ejercicios, es por eso que comentaremos los elementos que veremos durante los ejercicios.
 
 Palabras reservadas
-===
+---
 
 En las palabras reservadas podemos encontrar todas las cadenas que usamos para llamar a funciones internas del lenguaje como serian:
 
@@ -401,8 +429,12 @@ En las palabras reservadas podemos encontrar todas las cadenas que usamos para l
 -return
 -int
 
+Estas palabras podemos encontrarlas en casi todos los ejercicios ya que son la base de python.
+
 Comandos o instrucciones
-===
+---
+
+Esta son las instrucciones que se usan como base en las aplicaciones e indican que deben hacer como por ejemplo calcular, mostrar texto o contener datos.
 
 import --> metodo para importar librerias de python.
 
@@ -416,21 +448,40 @@ enumerate() --> crea un array bidimensional usando la cadena dada donde podemos 
 
 [::-1] --> invertir la cadena.
 
+Podemos encontrar estos en casi todos los ejercicios.
+
 Identificadores
-===
+---
+
+Estos son los nombres que le damos a las funcioens, variables, programas etc se utiliza para definir.
 
 def "funcion" --> forma de definir funciones.
 
 nota = --> forma de crear variables en python
 
+Operadores
+---
+
+Segun el tipo de operadores puede servir tanto para calcular como para comparar diferentes valores
+
+Operadores aritmetico: "+ - * / %"
+Un operador aritmético toma dos operandos como entrada, realiza un cálculo y devuelve el resultado.
+
+Operadores relacionales: " < > == <= "
+Un operador relacional se emplea para comparar y establecer la relación entre ellos. Devuelve un valor booleano (true o false) basado en la condición
+
+Operadores asignación: " = += -="
+Se utiliza un operador de asignación para asignar valores a una variable
 
 Comparaciones
-===
+---
+
+Se utilizan para desencadenar respuestas logicas en referencia a un valor, es decir, si sucede X debe pasar A
 
 if "variable" "condición" --> forma de generar un condicional, establecemos el nombre de la variable que vamos a utilizar y la condición donde podemos utilizar condicionantes numericos, dentro del condicional if podemos ver elif y else.
 
 Bucles
-===
+---
 
 while --> Otro metodo de generar bucles
 
